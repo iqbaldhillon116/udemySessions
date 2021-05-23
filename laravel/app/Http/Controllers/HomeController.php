@@ -52,7 +52,19 @@ class HomeController extends Controller
 
         // print_r(  $request->session()->all());
 
+        //flashing data
 
+        // $request->session()->flash('message','this is a flash data');
+
+        // return $request->session()->get('message');
+
+        // another handy methods are reflash and keep
+
+        // $request->session()->reflash();
+
+        // $request->session()->keep('message');
+
+           //flashing data ends
 
         return view('home');
     }
